@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text].error:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(red, 1);
+}
+
+html {
+    overflow-x: hidden;
+
+    body {
+        .hero-right {
+
+            // background-image: url('/img/illustration-working.svg');
+            // background-size: contain;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            @media only screen and (max-width: 767px) {
+                width: 75%;
+            }
+        }
+
+
+        .search-area {
+            background-color   : rgba(75, 56, 105, .9);
+            border-radius      : 7px;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-image   : url('/img/bg-shorten-desktop.svg');
+                background-size    : cover;
+                background-position: center;
+                background-repeat  : no-repeat;
+                
+            }
+            .error-msg {
+                font-size: 10px;
+                font-weight: 600;
+                top: 4px;
+            }
+        }
+    }
+}

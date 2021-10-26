@@ -1,0 +1,30 @@
+// custom ariables
+// $primary: #c29938;
+// $light: #fbf5e5;
+//$secondary: green;
+$success: rgba(42, 209, 207, 1);
+$navbar-light-color:                rgba(0, 0, 0, .4);
+$navbar-light-hover-color:          rgba(0, 0, 0, .8);
+$navbar-light-active-color:         rgba(0, 0, 0, .9);
+
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba(0, 0, 0, .0);
+
+$navbar-toggler-focus-width:        0px;
+
+//$input-focus-box-shadow:                0 0 5px rgba(red, 1);
+// $input-focus-border-color:              red;
+// $input-focus-color:                     green;
+// import functions and variables
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+    "altlight": #ebe1f7,
+    "altdark": #522192
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
